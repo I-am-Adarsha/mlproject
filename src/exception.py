@@ -1,10 +1,10 @@
 import sys
-import logging
+from src.logger import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='[%(asctime)s] %(levelname)s - %(message)s'
-)
+#logging.basicConfig(
+#    level=logging.INFO,
+#    format='[%(asctime)s] %(levelname)s - %(message)s'
+#)
 
 def error_message_detail(error, error_details:sys):
     _,_,exc_tb = error_details.exc_info()
